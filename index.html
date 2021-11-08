@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>LPU HACKERS</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.gif" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn" id="btn1"><a href="join.html">Join Us</a></button>
+            <button class="btn" id="btn2"><a href="#footer">Contact</a></button>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h1>Oh! Smart thieves, but we have got Smarter Security <br> <span>LPU's Cyber Security Experts Page</span></h1>
+                <br><br><br><br><br><br><br>
+                <div class="pic">
+                    <img src="images/pc.gif">
+                </div>
+            </div>
+            <div class="pic1">
+                <img src="images/pic1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <marquee width="100%" direction="left" height="35px">
+            <p><b>Attention</b> : Find Bug in This Page & Get Bounty ... </p>
+        </marquee>
+
+    </div>
+
+    <div class="container2">
+        <div class="gallery" id="gallery">
+            <div class="slideshow-container">
+                <h1 style="padding-left: 40%;" style="font-style:italic;"> Gallery</h1>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/hr1.jpeg" style="width:100%">
+                    <div class="text">LPU STUDENTS</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/hr2.jpg" style="width:100%">
+                    <div class="text">LPU STUDENT</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/hr3.jpg" style="width:100%">
+                    <div class="text">Anand Singh</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 3</div>
+                    <img src="images/hr4.jpg" style="width:100%">
+                    <div class="text">LPU STUDENTS</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 3</div>
+                    <img src="images/hr5.gif" style="width:100%">
+                    <div class="text">LPU STUDENTS</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 3</div>
+                    <img src="images/HR6.jpg" style="width:100%">
+                    <div class="text">LPU STUDENTS</div>
+                </div>
+
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+        </div>
+    </div>
+
+
+    <div class="container3" id="team">
+        <div class="row">
+            <h1>Team</h1>
+            <div class="column">
+                <img src="images/Certified Hackers.jpg" alt="farmer1" height="200% " width="100% ">
+            </div>
+            <div class="column ">
+                <h1>"LPU Team - Certified Ethical Hackers "</h1>
+                <p>Our cybersecurity professionals Team is responsible for protecting IT infrastructure, edge devices, networks, and data. More granularly, they are responsible for preventing data breaches and monitoring and reacting to attacks. Typicaly
+                    their's job titles are security analyst, security engineer, security administrator, security architect, security specialist, and security consultant. </p>
+                <button class="btn3" onclick="alert('We Got Your IP adress...\nSoon we wiil contact with you') ">Join Us</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container4" id="About">
+        <h1>About Us and Community</h1>
+        <p> Every Hacking group has a motive. Some are for fun, Some do illegal stuff, Some do it for their political agenda, And some are for learning & improving. If your aim is learning, I think it is better to learn by doing experiments. To join a hacking
+            group, You have to connect with people who have already joined any hacking group. Then you can ask them to make you a part of their community. Join some online hacking forums/Community. Show your hacking skills and knowledge and if you are
+            really good, Then we will contact you.
+        </p>
+    </div>
+
+
+    <div class="container5" id="footer">
+        <footer>
+            <p>Contact to Devloper<br>
+                <i style='font-size:24px' class='far'>&#xf2b6;</i>
+                <a href="anand722000@gmail.com">anand722000@gmail.com</a></p>
+            <i style='font-size:24px' class='fas'>&#xf095;</i><a href="#">+91 1234567890</a>
+
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

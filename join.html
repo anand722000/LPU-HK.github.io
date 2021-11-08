@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Sign up</title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-image: url(images/giphy.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: rgb(255, 51, 0);
+            padding-left: 30%;
+        }
+        
+        h1 {
+            padding-left: 8%;
+        }
+        
+        button {
+            background-color: #58b1ec;
+            width: 15%;
+            color: rgb(0, 0, 0);
+            padding: 0px;
+            margin: 15px 0px;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        
+        form {
+            width: 60%;
+            align-items: center;
+            border: 3px solid #5906f1;
+        }
+        
+        button:hover {
+            opacity: 0.7;
+        }
+        
+        .login {
+            width: auto;
+            padding: 0px 10px 0px 12px;
+            margin: 15px 0px;
+        }
+        
+        .container {
+            padding: 20px;
+            background-image: url(images/hacker.gif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Welcome to LPU Hackers Group</h1>
+
+    <form>
+        <div class="container">
+            <h3><label>Enter Full Name : </label></h3>
+            <input type="text" placeholder="Full Name" name="fullname" required> <br>
+            <h3><label>Designation : </label> </h3>
+            <input type="text" placeholder="Designation" name="Designation" required> <br>
+            <h3><label>Contact No. : </label> </h3>
+            <input type="text" placeholder="Enter Contact no." name="contact" required> <br>
+            <br>
+            <label for="person">Who are You:</label>
+            <select name="person" id="person">
+            <option value="Farmer">White Hat Hacker</option> 
+            <option value="Contractor">Gray Hat Hacker</option>
+            <option value="Contractor">Black Hat Hacker</option>
+            </select><br>
+            <button type="button" onclick="alert('Succesfully Joined \nWelcome to our Group')"><h3>Join</h3></button> <br>
+            <a href="index.html"><button type="button" class="login"><h3>Back to Home</h3></button></a>
+        </div>
+    </form>
+</body>
+
+</html>
